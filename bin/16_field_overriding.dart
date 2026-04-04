@@ -1,19 +1,17 @@
-
 class Person {
   String name = "person";
   void sayHello(String name) {
-    print("hello my name is $name, and hello i'm is ${this.name}");
+    print("Hello $name, my name is ${this.name}");
   }
 }
 
 class OtherPerson extends Person {
-  String name = "other person";
+  String name = "Other Person";
 }
 
 void main() {
   var person = Person();
   person.sayHello("Nadif");
-
-  var otherperson = OtherPerson();
-  otherperson.sayHello("Nadif");
+  var otherPerson = OtherPerson();
+  otherPerson.sayHello("Nadif");
 }

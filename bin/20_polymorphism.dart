@@ -1,3 +1,5 @@
+import 'dart:mirrors';
+
 class Employee {
   String name;
   Employee(this.name);
@@ -13,11 +15,11 @@ class VicePresident extends Manager {
 
 void main() {
   Employee employee = Employee("Nadif");
-  print(employee.name);
+  print(employee);
 
   employee = Manager("Nadif");
-  print(employee.name);
+  print(employee);
 
   employee = VicePresident("Nadif");
-  print(employee.name);
+  print(employee);
 }

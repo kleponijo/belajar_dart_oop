@@ -1,11 +1,9 @@
-import 'data/product.dart';
+import 'data/4_product.dart';
 
 void main() {
   var product = Product();
-  product.id = "1";
-  product.name = "Laptop";
-
+  product.id = '1';
+  product.name = 'Laptop';
   print(product.toString());
   print(product);
-  
 }

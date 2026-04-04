@@ -1,10 +1,10 @@
-abstract class Animal{
+abstract class Animal {
   String? name;
   void run();
 }
 
 class Cat extends Animal {
   void run() {
-    print('that name is ${this.name}');
+    print('Cat $name is running');
   }
 }

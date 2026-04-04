@@ -1,11 +1,11 @@
 class Manager {
-  String name;
+  String? name;
   Manager(this.name);
 }
 
 class VicePresident extends Manager {
   VicePresident(String name) : super(name) {
-    print("Create new VicePresident");
+    print("Redirect constructor have been create");
   }
 }
 
@@ -13,6 +13,6 @@ void main() {
   var manager = Manager("Klepon");
   print(manager.name);
 
-  var vricePresident = VicePresident("Nadif");
-  print(vricePresident.name);
+  var vp = VicePresident("Nadif");
+  print(vp.name);
 }

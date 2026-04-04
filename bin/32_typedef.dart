@@ -1,4 +1,4 @@
-import 'data/sum.dart';
+import 'data/9_sum.dart';
 
 void main() {
   var jumlah = Jumlah(10, 10);
@@ -6,5 +6,4 @@ void main() {
 
   var total = Total(10, 10);
   print(total());
-  
 }

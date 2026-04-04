@@ -1,16 +1,17 @@
 class Category {
   String id;
   String name;
+  Category(this.id, this.name);
 
-  Category(this.id,this.name);
-  bool operator ==(Object other){
-    if(other is Category){
-      if(id != other.id){
+  bool operator ==(Object other) {
+    if (other is Category) {
+      if (id != other.id) {
         return false;
-      }else if(name != other.name){
+      } else if (name != other.name) {
         return false;
+      } else {
+        return true;
       }
-      return true;
     } else {
       return false;
     }
@@ -21,5 +22,4 @@ class Category {
     result += name.hashCode;
     return result;
   }
-
 }
