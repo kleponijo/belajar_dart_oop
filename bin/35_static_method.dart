@@ -4,5 +4,4 @@ class Math {
 
 void main() {
   print(Math.sum(10, 10));
-  print(Math.sum(100, 100));
 }
